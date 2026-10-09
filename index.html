@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sai Grandhi</title>
+  <meta name="description" content="Sai Grandhi builds practice tools and data stories: offline interview gyms, a spaced-repetition tracker for LeetCode, and Broadsheet, a static site generator for interactive charts.">
+  <link rel="canonical" href="https://thegrandhi.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sai Grandhi">
+  <meta property="og:description" content="Practice tools and data stories.">
+  <meta property="og:url" content="https://thegrandhi.github.io/">
+  <meta name="theme-color" content="#f4f5f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101214" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400..800&display=swap">
+  <link rel="preload" as="image" href="assets/broadsheet-map.webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="wordmark" href="./">Sai Grandhi</a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#learning">Learning</a></li>
+          <li><a href="https://github.com/thegrandhi">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="hero-hello" style="--i:0">Hi, I'm Sai.</p>
+        <h1 id="hero-title" style="--i:1">I build practice tools and data stories.</h1>
+        <p class="hero-sub" style="--i:2">Offline interview gyms, a spaced-repetition tracker for LeetCode, and a static site generator for charts you can explore.</p>
+        <div class="hero-ctas" style="--i:3">
+          <a class="btn btn-primary" href="#work">See the work</a>
+          <a class="btn btn-ghost" href="https://github.com/thegrandhi">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="hero-figure" style="--i:2">
+        <a href="https://thegrandhi.github.io/broadsheet/thirty-new-countries/">
+          <img src="assets/broadsheet-map.webp" width="1480" height="1180" fetchpriority="high" decoding="async"
+            alt="Tile map of India with one square per state, colored from red to blue by its simulated viability score as an independent country.">
+        </a>
+        <figcaption>A tile map from <a href="https://thegrandhi.github.io/broadsheet/thirty-new-countries/">If Every Indian State Became Its Own Country</a>, made with Broadsheet.</figcaption>
+      </figure>
+    </section>
+
+    <section id="work" class="work wrap" aria-labelledby="work-title">
+      <h2 id="work-title">Selected work</h2>
+
+      <div class="bento">
+        <article class="cell cell-broadsheet reveal">
+          <figure class="shot shot-light">
+            <img src="assets/broadsheet-lines.webp" width="1800" height="975" loading="lazy" decoding="async"
+              alt="Line chart from a Broadsheet story: for each hypothetical new country, the share of simulated futures with no major crisis, over 20 years.">
+          </figure>
+          <div class="cell-body">
+            <h3>Broadsheet</h3>
+            <p>A static site generator for data journalism. Write a story in Markdown and get a newspaper-style page with interactive charts, maps and tables, in about 6 KB of browser JavaScript.</p>
+            <ul class="links">
+              <li><a href="https://thegrandhi.github.io/broadsheet/">Live demo <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://github.com/thegrandhi/broadsheet">Source <span aria-hidden="true">↗</span></a></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="cell cell-gym reveal">
+          <div class="cell-body">
+            <h3>Code Gym</h3>
+            <p>A gym for coding interviews and system design that works fully offline, on a plane or on a phone. Python runs in the browser, and nothing leaves the device.</p>
+          </div>
+          <dl class="stats">
+            <div><dt>Coding problems</dt><dd>138</dd></div>
+            <div><dt>Patterns</dt><dd>18</dd></div>
+            <div><dt>Lessons</dt><dd>27</dd></div>
+            <div><dt>Mock interviews</dt><dd>12</dd></div>
+          </dl>
+          <ul class="links cell-foot">
+            <li><a href="https://github.com/thegrandhi/IC2CTO">Source <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </article>
+
+        <article class="cell cell-leettrack reveal">
+          <figure class="shot shot-dark">
+            <img src="assets/leettrack.webp" width="852" height="1197" loading="lazy" decoding="async"
+              alt="LeetTrack's dashboard showing problems solved, day streak, reviews due today, a difficulty breakdown, top tags and 30 days of activity.">
+          </figure>
+          <div class="cell-body">
+            <h3>LeetTrack</h3>
+            <p>A Chrome extension that schedules LeetCode reviews with the SM-2 spaced-repetition algorithm, right before you would forget a solution.</p>
+          </div>
+        </article>
+
+        <article class="cell cell-forge reveal">
+          <figure class="shot shot-light">
+            <img src="assets/forge.webp" width="1800" height="1025" loading="lazy" decoding="async"
+              alt="Forge's workspace: the Banking System with Transactions challenge beside a TypeScript editor with starter code and a Run button.">
+          </figure>
+          <div class="cell-body">
+            <h3>Forge</h3>
+            <p>A self-hosted platform for hands-on coding interviews. Build a banking system, a file system or a lazy data pipeline in the browser editor, then run the tests in TypeScript or Python.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="learning" class="learning wrap" aria-labelledby="learning-title">
+      <h2 id="learning-title">What I'm studying</h2>
+      <p class="lede">Courses and workshops I've worked through recently, with the code I wrote along the way.</p>
+
+      <ol class="log">
+        <li class="reveal">
+          <time datetime="2026-10">Oct 2026</time>
+          <div>
+            <h3>AI infrastructure and GPU computing</h3>
+            <p>O'Reilly live event. Kubernetes labs on a local kind cluster, including batch job queueing with Kueue.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <time datetime="2026-09">Sep 2026</time>
+          <div>
+            <h3>Agentic RAG with LangGraph</h3>
+            <p>Exercises from the O'Reilly course, adapted to run on Google Gemini.</p>
+          </div>
+          <a href="https://github.com/thegrandhi/agentic_rag_with_langgraph">Source <span aria-hidden="true">↗</span></a>
+        </li>
+        <li class="reveal">
+          <time datetime="2026-09">Sep 2026</time>
+          <div>
+            <h3>LangChain Interrupt 2026</h3>
+            <p>Workshop notebooks on building Deep Agents.</p>
+          </div>
+          <a href="https://github.com/thegrandhi/langchain-interrupt26">Source <span aria-hidden="true">↗</span></a>
+        </li>
+      </ol>
+    </section>
+
+    <section id="contact" class="contact wrap" aria-labelledby="contact-title">
+      <h2 id="contact-title">Get in touch</h2>
+      <p>Questions about any of these projects, or ideas for new ones, are welcome.</p>
+      <ul class="contact-links">
+        <li><a class="btn btn-primary" href="https://github.com/thegrandhi">GitHub <span aria-hidden="true">↗</span></a></li>
+        <!-- Add more ways to reach you, for example:
+        <li><a class="btn btn-ghost" href="mailto:you@example.com">Email</a></li>
+        <li><a class="btn btn-ghost" href="https://www.linkedin.com/in/your-handle/">LinkedIn <span aria-hidden="true">↗</span></a></li>
+        -->
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Sai Grandhi</p>
+      <p>Plain HTML and CSS, hosted on GitHub Pages.</p>
+    </div>
+  </footer>
+</body>
+</html>
